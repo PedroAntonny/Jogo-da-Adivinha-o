@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-white: #fff;
+  --color-p: #34355b;
+  --bg-button: #7879f1;
+  --bg-button-hover: #6363ce;
+  --bg-input: #dce2e9;
+}
+
+body,
+input,
+button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+button {
+  background: var(--bg-button);
+  color: var(--color-base-white);
+  font-weight: 700;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--bg-button-hover);
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background: var(--color-base-white);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+  text-align: center;
+}
+
+/* Screen 1 */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p {
+  color: var(--color-p);
+}
+
+p {
+  opacity: 0.8;
+}
+
+#error-message p {
+  color: red;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1.6rem;
+}
+
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input,
+button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background: var(--bg-input);
+  width: 8rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  text-align: center;
+}
+
+/* Screen 2 */
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
+}
