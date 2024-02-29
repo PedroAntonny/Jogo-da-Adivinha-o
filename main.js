@@ -44,9 +44,10 @@ function handleResetClick() {
   inputNumber.focus()
   xAttempts = 1
   randomNumber = Math.round(Math.random() * 10)
+  screen1.querySelector('#error-message').innerHTML = ''
 }
 
-function handleKeyDown(event) {
+function handleKeyDown() {
   if (screen1.classList.contains('hide')) {
     handleResetClick()
   }
